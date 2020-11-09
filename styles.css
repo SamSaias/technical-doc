@@ -1,0 +1,103 @@
+body {
+  display: grid;
+  grid-template-columns: 320px auto 320px;
+  grid-template-areas: 
+    "nav r1 res";
+  text-align: justify;
+}
+
+#main-doc {
+  grid-area: r1;
+}
+
+header {
+  font-size: 30px;
+}
+
+#navbar {
+  background-color: #B8B8B8;
+  grid-area: nav;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 310px;
+  text-align: center;
+  white-space: pre;
+  line-height: 20px;
+}
+
+.nav-link {
+  line-height: 70px;
+  font-size: 25px;
+  color: black;
+}
+
+.link {
+  line-height: 70px;
+  font-size: 25px;
+  color: black;
+}
+
+#resources {
+  background-color: #B8B8B8;
+  grid-area: nav;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 310px;
+  text-align: center;
+  white-space: pre;
+  line-height: 20px;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'nav'
+      'r1'
+      'res';
+  }
+  #navbar {
+  background-color: #B8B8B8;
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  white-space: normal;
+  line-height: 2px;
+}
+  
+  #resources {
+  background-color: #B8B8B8;
+  grid-area: res;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  text-align: left;
+  white-space: normal;
+  line-height: 30px;
+} 
+  .nav-link {
+  line-height: 40px;
+  font-size: 15px;
+  color: black;
+}
+  
+  .link {
+  line-height: 40px;
+  font-size: 15px;
+  color: black;
+}
+  .sidebar-header {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
