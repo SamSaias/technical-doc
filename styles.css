@@ -1,103 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  display: grid;
-  grid-template-columns: 320px auto 320px;
-  grid-template-areas: 
-    "nav r1 res";
-  text-align: justify;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-#main-doc {
-  grid-area: r1;
+#main-doc   {
+    display: flex;
+    line-height: 4vh;
+    height: 94vh;
 }
 
-header {
-  font-size: 30px;
+#content    {
+    height: 100vh;
+    margin: 10vh 22vw 0 22vw;
 }
 
-#navbar {
-  background-color: #B8B8B8;
-  grid-area: nav;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 310px;
-  text-align: center;
-  white-space: pre;
-  line-height: 20px;
+#left-sidebar   {
+    background-color: rgb(147, 158, 190);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    align-items: center;
+    line-height: 16.6vh;
+    position: fixed;
 }
 
-.nav-link {
-  line-height: 70px;
-  font-size: 25px;
-  color: black;
+#right-sidebar   {
+    background-color: rgb(147, 158, 190);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    align-items: center;
+    line-height: 16.6vh;
+    position: fixed;
+    right: 0px;
 }
 
-.link {
-  line-height: 70px;
-  font-size: 25px;
-  color: black;
+h2  {
+    font-size: 2rem;
 }
 
-#resources {
-  background-color: #B8B8B8;
-  grid-area: nav;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 310px;
-  text-align: center;
-  white-space: pre;
-  line-height: 20px;
-}
-
-@media (max-width: 800px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'nav'
-      'r1'
-      'res';
-  }
-  #navbar {
-  background-color: #B8B8B8;
-  grid-area: nav;
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  text-align: left;
-  white-space: normal;
-  line-height: 2px;
-}
-  
-  #resources {
-  background-color: #B8B8B8;
-  grid-area: res;
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  text-align: left;
-  white-space: normal;
-  line-height: 30px;
-} 
-  .nav-link {
-  line-height: 40px;
-  font-size: 15px;
-  color: black;
-}
-  
-  .link {
-  line-height: 40px;
-  font-size: 15px;
-  color: black;
-}
-  .sidebar-header {
-    font-size: 20px;
-    margin-top: 10px;
-  }
+p   {
+    font-size: 1rem;
+    margin: 3vh 0 3vh 0;
 }

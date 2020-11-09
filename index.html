@@ -2,22 +2,32 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" </head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
 <body>
-    <main id="main-doc">
 
-        <section id="introduction" class="main-section">
-            <header>Introduction</header>
+    <main id="main-doc">
+        <nav id="left-sidebar">
+            <h2 class="sidebar-header">
+                Quick Links
+            </h2>
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#prerequisites">Prerequisites</a>
+            <a class="nav-link" href="#html">HTML</a>
+            <a class="nav-link" href="#css">CSS</a>
+            <a class="nav-link" href="#bringing_them_together">Bringing them together</a>
+        </nav>
+
+        <section id="content">
+            <h2>Introduction</h2>
             <p>Welcome to the world of front-end web development. With only a few basic skills you can learn to create
                 static websites which can be hosted and viewed online! This skillset can be used to land a job as a web
                 developer, create your own personal website or blog, or simply as a hobby!</p>
             <p>While "only a few basic skills" are necessary to <em>start</em> creating static web pages, there is a
                 plethora of information available to help you hone your skills to a more advanced stack.</p>
-        </section>
 
-        <section id="prerequisites" class="main-section">
-            <header>Prerequisites</header>
+            <h2>Prerequisites</h2>
             <p>One might say you don't need any pre-existing knowledge at all to begin working with HTML and CSS to
                 create static web pages. The fact of the matter is, we still <em>assume</em> you know
                 <em>something</em>. </p>
@@ -30,10 +40,8 @@
                 grandmother to pickup HTML and CSS, but seeing as she has never owned a cell phone or been on the
                 internet, I also wouldn't expect her to inquire. If you can turn on a computer and use the internet to
                 find a recipe for brownies, you can learn to use HTML and CSS!</p>
-        </section>
 
-        <section id="html" class="main-section">
-            <header>HTML</header>
+            <h2>HTML</h2>
             <p>HTML stands for <q>Hyper Text Markup Language</q>. Think of using a simple text document, like Microsoft
                 Word. You have options for different elements of a page. Perhaps you have a header and footer, a title
                 and some subtitles, bullet points or numbered lists.</p>
@@ -42,19 +50,15 @@
             <p>When working with code, you do not have the <q>user interface</q> you may be used to with a text editor.
                 Instead you must use <q>Hyper Text</q> to syntactically markup your web-page. HTML defines the structure
                 or architecture of a web page.</p>
-        </section>
 
-        <section id="css" class="main-section">
-            <header>CSS</header>
+            <h2>CSS</h2>
             <p>CSS stands for <q>Cascading Style Sheet</q>. As the name may suggest, CSS provides the <em>style</em> for
                 your web page. <q>Cascading</q> is part of the name because of how a web browser reads the code written
                 with CSS.</p>
             <p>One would use CSS to change the layout or style of their webpage. You can add fun colors and arrange the
                 page in lots of unique ways using CSS.</p>
-        </section>
 
-        <section id="bringing_them_together" class="main-section">
-            <header>Bringing them together</header>
+            <h2>Bringing them together</h2>
             <p>While HTML and CSS are both powerful, they don't do much on their own. Technically, you can create a
                 web-page with only HTML. It would be bland and not have much aesthetic structure, but it would still be
                 text on a page.</p>
@@ -68,29 +72,17 @@
                 <li>Have a static web page!</li>
             </ol>
         </section>
+        <nav id="right-sidebar">
+            <h2 class="sidebar-header">
+                Resources
+            </h2>
+            <a class="link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN Web Docs</a>
+            <a class="link" href="https://html.com/">HTML.COM</a>
+            <a class="link" href="https://www.codecademy.com/learn/learn-html">Code Academy</a>
+            <a class="link" href="https://www.w3schools.com/css/">W3 Schools</a>
+            <a class="link" href="https://zendev.com/ultimate-guide-to-learning-css.html">Zen Dev</a>
+        </nav>
     </main>
-
-    <nav id="navbar">
-        <header class="sidebar-header">
-            Quick Links
-        </header>
-        <a class="nav-link" href="#introduction">Introduction</a>
-        <a class="nav-link" href="#prerequisites">Prerequisites</a>
-        <a class="nav-link" href="#html">HTML</a>
-        <a class="nav-link" href="#css">CSS</a>
-        <a class="nav-link" href="#bringing_them_together">Bringing them together</a>
-    </nav>
-
-    <nav id="resources">
-        <header class="sidebar-header">
-            Resources
-        </header>
-        <a class="link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN Web Docs</a>
-        <a class="link" href="https://html.com/">HTML.COM</a>
-        <a class="link" href="https://www.codecademy.com/learn/learn-html">Code Academy</a>
-        <a class="link" href="https://www.w3schools.com/css/">W3 Schools</a>
-        <a class="link" href="https://zendev.com/ultimate-guide-to-learning-css.html">Zen Dev</a>
-    </nav>
 </body>
 
 </html>
